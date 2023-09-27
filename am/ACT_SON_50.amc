@@ -1,0 +1,239 @@
+# File ACT_SON_50.amc - am model configuration file for
+#
+#            site: ACT (lat -22.959, lon -67.788)
+#          season: SON
+#     H2O profile: 50th percentile
+#      O3 profile: median
+#
+# Climatological statistics to produce this model were compiled from
+# NASA MERRA-2 reanalysis data for the period 2007-2016.
+#
+# MERRA references:
+#   M. M. Rienecker et al. (2011), MERRA: NASA's Modern-Era Retrospective
+#   Analysis for Research and Applications. J. Climate 24:3624.
+#
+#   A. Molod et al (2015), Development of the GEOS-5 atmospheric general
+#   circulation model: evolution from MERRA to MERRA2.  Geoscience Model
+#   Development 8:1339. 
+#
+# MERRA is produced by the NASA/Goddard Global Modeling and Assimilation
+# Office (GMAO).  MERRA-2 data are archived and distributed by the Goddard
+# Earth Sciences Data and Information Services Center (GES DISC).
+#
+# Data reference:
+#   Global Modeling and Assimilation Office (GMAO) (2015),
+#   MERRA-2 inst3_3d_asm_Np: 3d,3-Hourly,Instantaneous,Pressure-Level,
+#   Assimilation,Assimilated Meteorological Fields,version 5.12.4,
+#   Greenbelt, MD, USA:Goddard Space Flight Center Distributed Active
+#   Archive Center (GSFC DAAC),
+#   Accessed 2017 Feb 3 at doi:10.5067/QBZ6MG944HW0
+?
+? Usage:
+?  am ACT_SON_50.amc  f_min  f_max  df  zenith_angle  trop_h2o_scale_factor
+?
+? Example:
+?  am ACT_SON_50.amc  0 GHz  300 GHz  10 MHz  0 deg  1.0
+?
+f %1 %2  %3 %4  %5 %6
+output f GHz  tau  tx  Trj K  Tb K
+za %7 %8
+tol 1e-4
+
+Nscale troposphere h2o %9
+
+#T0 2.7 K
+
+layer mesosphere
+Pbase 0.1 mbar
+Tbase 219.9 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.57e-06
+column o3 vmr 1.85e-06
+
+layer mesosphere
+Pbase 0.3 mbar
+Tbase 243.8 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.64e-06
+column o3 vmr 1.69e-06
+
+layer mesosphere
+Pbase 0.4 mbar
+Tbase 250.1 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.70e-06
+column o3 vmr 1.62e-06
+
+layer mesosphere
+Pbase 0.5 mbar
+Tbase 255.9 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.69e-06
+column o3 vmr 1.80e-06
+
+layer mesosphere
+Pbase 0.7 mbar
+Tbase 264.1 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.67e-06
+column o3 vmr 2.11e-06
+
+layer stratosphere
+Pbase 1 mbar
+Tbase 266.8 K
+lineshape Voigt-Kielkopf
+column dry_air vmr
+column h2o vmr 6.62e-06
+column o3 vmr 2.62e-06
+
+layer stratosphere
+Pbase 2 mbar
+Tbase 258.4 K
+column dry_air vmr
+column h2o vmr 6.48e-06
+column o3 vmr 3.87e-06
+
+layer stratosphere
+Pbase 3 mbar
+Tbase 251.4 K
+column dry_air vmr
+column h2o vmr 6.24e-06
+column o3 vmr 5.67e-06
+
+layer stratosphere
+Pbase 4 mbar
+Tbase 246.4 K
+column dry_air vmr
+column h2o vmr 6.00e-06
+column o3 vmr 7.13e-06
+
+layer stratosphere
+Pbase 5 mbar
+Tbase 241.9 K
+column dry_air vmr
+column h2o vmr 5.77e-06
+column o3 vmr 8.07e-06
+
+layer stratosphere
+Pbase 7 mbar
+Tbase 235.2 K
+column dry_air vmr
+column h2o vmr 5.50e-06
+column o3 vmr 8.63e-06
+
+layer stratosphere
+Pbase 10 mbar
+Tbase 229.8 K
+column dry_air vmr
+column h2o vmr 5.20e-06
+column o3 vmr 8.77e-06
+
+layer stratosphere
+Pbase 20 mbar
+Tbase 220.6 K
+column dry_air vmr
+column h2o vmr 4.91e-06
+column o3 vmr 7.63e-06
+
+layer stratosphere
+Pbase 30 mbar
+Tbase 215.8 K
+column dry_air vmr
+column h2o vmr 4.67e-06
+column o3 vmr 5.50e-06
+
+layer stratosphere
+Pbase 40 mbar
+Tbase 212.4 K
+column dry_air vmr
+column h2o vmr 4.53e-06
+column o3 vmr 3.66e-06
+
+layer stratosphere
+Pbase 50 mbar
+Tbase 209.6 K
+column dry_air vmr
+column h2o vmr 4.43e-06
+column o3 vmr 2.39e-06
+
+layer stratosphere
+Pbase 70 mbar
+Tbase 201.6 K
+column dry_air vmr
+column h2o vmr 4.45e-06
+column o3 vmr 1.32e-06
+
+layer troposphere
+Pbase 100 mbar
+Tbase 198.5 K
+column dry_air vmr
+column h2o vmr 5.04e-06
+column o3 vmr 4.64e-07
+
+layer troposphere
+Pbase 150 mbar
+Tbase 207.9 K
+column dry_air vmr
+column h2o vmr 9.44e-06
+column o3 vmr 1.26e-07
+
+layer troposphere
+Pbase 200 mbar
+Tbase 219.2 K
+column dry_air vmr
+column h2o vmr 3.03e-05
+column o3 vmr 6.91e-08
+
+layer troposphere
+Pbase 250 mbar
+Tbase 230.0 K
+column dry_air vmr
+column h2o vmr 7.08e-05
+column o3 vmr 5.86e-08
+
+layer troposphere
+Pbase 300 mbar
+Tbase 239.3 K
+column dry_air vmr
+column h2o vmr 1.16e-04
+column o3 vmr 5.56e-08
+
+layer troposphere
+Pbase 350 mbar
+Tbase 247.2 K
+column dry_air vmr
+column h2o vmr 1.62e-04
+column o3 vmr 5.48e-08
+
+layer troposphere
+Pbase 400 mbar
+Tbase 254.1 K
+column dry_air vmr
+column h2o vmr 2.23e-04
+column o3 vmr 5.49e-08
+
+layer troposphere
+Pbase 450 mbar
+Tbase 260.5 K
+column dry_air vmr
+column h2o vmr 3.21e-04
+column o3 vmr 5.53e-08
+
+layer troposphere
+Pbase 500 mbar
+Tbase 266.2 K
+column dry_air vmr
+column h2o vmr 5.11e-04
+column o3 vmr 5.53e-08
+
+layer troposphere
+Pbase 542 mbar
+Tbase 270.6 K
+column dry_air vmr
+column h2o vmr 8.13e-04
+column o3 vmr 5.50e-08

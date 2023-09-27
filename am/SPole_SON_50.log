@@ -1,0 +1,526 @@
+# am version 13.0 (build date Sep 26 2023 19:26:47)
+
+# run time 3.838 s
+# dcache hit: 182  miss: 118  discard: 118
+
+f 1 GHz  350 GHz  100 MHz
+output f GHz  tau neper  tx none  Trj K  Tb K
+
+tol 0.0001
+selfbroad_vmr_tol 0.003
+
+geometry plane-parallel
+refract none
+za 0 deg
+PTmode Pbase Tbase
+
+g 980.665 cm*s^-2
+dg_dz 0 s^-2
+
+Nscale troposphere h2o 1
+
+T0 0 K
+
+layer mesosphere
+# P 0.1 mbar
+# T 236.9 K
+# dP 0.1 mbar
+Pbase 0.1 mbar
+Tbase 236.9 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999994)  (2.12017e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 4.9e-06  (1.03889e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 6.4e-07  (1.35691e+15 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer mesosphere
+# P 0.2 mbar
+# T 253.115 K
+# dP 0.2 mbar
+Pbase 0.3 mbar
+Tbase 262.6 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999994)  (4.24033e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 5.49e-06  (2.32796e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 8.32e-07  (3.52798e+15 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer mesosphere
+# P 0.35 mbar
+# T 265.386 K
+# dP 0.1 mbar
+Pbase 0.4 mbar
+Tbase 267.8 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999993)  (2.12016e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.18e-06  (1.31027e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 1.17e-06  (2.48061e+15 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer mesosphere
+# P 0.45 mbar
+# T 269.595 K
+# dP 0.1 mbar
+Pbase 0.5 mbar
+Tbase 271.2 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999992)  (2.12016e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.32e-06  (1.33995e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 1.47e-06  (3.11666e+15 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer mesosphere
+# P 0.6 mbar
+# T 274.56 K
+# dP 0.2 mbar
+Pbase 0.7 mbar
+Tbase 277.4 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999992)  (4.24032e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.43e-06  (2.72655e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 1.86e-06  (7.88706e+15 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 0.85 mbar
+# T 278.38 K
+# dP 0.3 mbar
+Pbase 1 mbar
+Tbase 279.2 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Voigt-Kielkopf ch4 co co2 h2o_lines n2o o2_coupled o2_uncoupled o3
+column dry_air hydrostatic (0.999991)  (6.36047e+21 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.51e-06  (4.14071e+16 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 2.38e-06  (1.51381e+16 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 1.5 mbar
+# T 275.924 K
+# dP 1 mbar
+Pbase 2 mbar
+Tbase 273.6 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.99999)  (2.12015e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.54e-06  (1.38659e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 3.36e-06  (7.12379e+16 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 2.5 mbar
+# T 268.977 K
+# dP 1 mbar
+Pbase 3 mbar
+Tbase 265.2 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999989)  (2.12015e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.5e-06  (1.37811e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 4.44e-06  (9.41357e+16 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 3.5 mbar
+# T 262.574 K
+# dP 1 mbar
+Pbase 4 mbar
+Tbase 260.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999989)  (2.12015e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.43e-06  (1.36327e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 4.97e-06  (1.05373e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 4.5 mbar
+# T 258.189 K
+# dP 1 mbar
+Pbase 5 mbar
+Tbase 256.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999989)  (2.12015e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.35e-06  (1.34631e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 5.13e-06  (1.08765e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 6 mbar
+# T 253.157 K
+# dP 2 mbar
+Pbase 7 mbar
+Tbase 250.5 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999989)  (4.2403e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.25e-06  (2.65022e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 5.07e-06  (2.14986e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 8.5 mbar
+# T 246.581 K
+# dP 3 mbar
+Pbase 10 mbar
+Tbase 243.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999989)  (6.36045e+22 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 6.13e-06  (3.899e+17 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 4.74e-06  (3.01489e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 15 mbar
+# T 230.548 K
+# dP 10 mbar
+Pbase 20 mbar
+Tbase 221.5 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.99999)  (2.12015e+23 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 5.97e-06  (1.26574e+18 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 3.91e-06  (8.28988e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 25 mbar
+# T 214.676 K
+# dP 10 mbar
+Pbase 30 mbar
+Tbase 209.1 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999991)  (2.12016e+23 cm^-2)
+! Warning: Column included 3017 unresolved lines.
+column h2o hydrostatic 5.75e-06  (1.2191e+18 cm^-2)
+! Warning: Column included 328 unresolved lines.
+column o3 hydrostatic 2.81e-06  (5.95769e+17 cm^-2)
+! Warning: Column included 7915 unresolved lines.
+
+layer stratosphere
+# P 35 mbar
+# T 204.76 K
+# dP 10 mbar
+Pbase 40 mbar
+Tbase 201 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999993)  (2.12016e+23 cm^-2)
+! Warning: Column included 2460 unresolved lines.
+column h2o hydrostatic 5.49e-06  (1.16398e+18 cm^-2)
+! Warning: Column included 170 unresolved lines.
+column o3 hydrostatic 1.83e-06  (3.87992e+17 cm^-2)
+! Warning: Column included 3232 unresolved lines.
+
+layer stratosphere
+# P 45 mbar
+# T 199.047 K
+# dP 10 mbar
+Pbase 50 mbar
+Tbase 197.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999994)  (2.12016e+23 cm^-2)
+! Warning: Column included 2267 unresolved lines.
+column h2o hydrostatic 5.18e-06  (1.09825e+18 cm^-2)
+! Warning: Column included 94 unresolved lines.
+column o3 hydrostatic 1.1e-06  (2.3322e+17 cm^-2)
+
+layer stratosphere
+# P 60 mbar
+# T 195.674 K
+# dP 20 mbar
+Pbase 70 mbar
+Tbase 194.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999995)  (4.24033e+23 cm^-2)
+! Warning: Column included 1545 unresolved lines.
+column h2o hydrostatic 4.62e-06  (1.95904e+18 cm^-2)
+! Warning: Column included 53 unresolved lines.
+column o3 hydrostatic 5.96e-07  (2.52725e+17 cm^-2)
+
+layer troposphere
+# P 85 mbar
+# T 194.354 K
+# dP 30 mbar
+Pbase 100 mbar
+Tbase 194.4 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999996)  (6.36051e+23 cm^-2)
+! Warning: Column included 11 unresolved lines.
+column h2o hydrostatic 3.97e-06  (2.52513e+18 cm^-2)  (* 1.00000)
+! Warning: Column included 26 unresolved lines.
+column o3 hydrostatic 3.02e-07  (1.92088e+17 cm^-2)
+
+layer troposphere
+# P 125 mbar
+# T 196.161 K
+# dP 50 mbar
+Pbase 150 mbar
+Tbase 197.6 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999997)  (1.06008e+24 cm^-2)
+column h2o hydrostatic 3.23e-06  (3.42409e+18 cm^-2)  (* 1.00000)
+! Warning: Column included 16 unresolved lines.
+column o3 hydrostatic 2.63e-07  (2.78803e+17 cm^-2)
+
+layer troposphere
+# P 175 mbar
+# T 199.047 K
+# dP 50 mbar
+Pbase 200 mbar
+Tbase 200.3 K
+Mair 28.964 h2o o3  (28.964)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999996)  (1.06008e+24 cm^-2)
+column h2o hydrostatic 3.93e-06  (4.16615e+18 cm^-2)  (* 1.00000)
+! Warning: Column included 10 unresolved lines.
+column o3 hydrostatic 2.38e-07  (2.52301e+17 cm^-2)
+
+layer troposphere
+# P 225 mbar
+# T 202.306 K
+# dP 50 mbar
+Pbase 250 mbar
+Tbase 204.1 K
+Mair 28.964 h2o o3  (28.9639)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999993)  (1.06008e+24 cm^-2)
+column h2o hydrostatic 7.19e-06  (7.62205e+18 cm^-2)  (* 1.00000)
+! Warning: Column included 8 unresolved lines.
+column o3 hydrostatic 1.22e-07  (1.29331e+17 cm^-2)
+
+layer troposphere
+# P 275 mbar
+# T 207.446 K
+# dP 50 mbar
+Pbase 300 mbar
+Tbase 210.5 K
+Mair 28.964 h2o o3  (28.9638)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999986)  (1.06008e+24 cm^-2)
+column h2o hydrostatic 1.44e-05  (1.52653e+19 cm^-2)  (* 1.00000)
+! Warning: Column included 8 unresolved lines.
+column o3 hydrostatic 5.44e-08  (5.76691e+16 cm^-2)
+
+layer troposphere
+# P 325 mbar
+# T 213.615 K
+# dP 50 mbar
+Pbase 350 mbar
+Tbase 216.5 K
+Mair 28.964 h2o o3  (28.9637)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999971)  (1.06007e+24 cm^-2)
+column h2o hydrostatic 2.87e-05  (3.04248e+19 cm^-2)  (* 1.00000)
+! Warning: Column included 8 unresolved lines.
+column o3 hydrostatic 3.37e-08  (3.57253e+16 cm^-2)
+
+layer troposphere
+# P 375 mbar
+# T 219.548 K
+# dP 50 mbar
+Pbase 400 mbar
+Tbase 222.4 K
+Mair 28.964 h2o o3  (28.9634)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999946)  (1.06005e+24 cm^-2)
+column h2o hydrostatic 5.4e-05  (5.72459e+19 cm^-2)  (* 1.00000)
+! Warning: Column included 7 unresolved lines.
+column o3 hydrostatic 2.71e-08  (2.8729e+16 cm^-2)
+
+layer troposphere
+# P 425 mbar
+# T 225.128 K
+# dP 50 mbar
+Pbase 450 mbar
+Tbase 227.7 K
+Mair 28.964 h2o o3  (28.963)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999906)  (1.06003e+24 cm^-2)
+column h2o hydrostatic 9.35e-05  (9.91217e+19 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.47e-08  (2.61851e+16 cm^-2)
+
+layer troposphere
+# P 475 mbar
+# T 230.009 K
+# dP 50 mbar
+Pbase 500 mbar
+Tbase 232.2 K
+Mair 28.964 h2o o3  (28.9624)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999856)  (1.05999e+24 cm^-2)
+column h2o hydrostatic 0.000144  (1.52661e+20 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.4e-08  (2.54435e+16 cm^-2)
+
+layer troposphere
+# P 525 mbar
+# T 233.992 K
+# dP 50 mbar
+Pbase 550 mbar
+Tbase 235.7 K
+Mair 28.964 h2o o3  (28.9618)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999801)  (1.05996e+24 cm^-2)
+column h2o hydrostatic 0.000199  (2.10973e+20 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.43e-08  (2.57621e+16 cm^-2)
+
+layer troposphere
+# P 575 mbar
+# T 236.926 K
+# dP 50 mbar
+Pbase 600 mbar
+Tbase 238.1 K
+Mair 28.964 h2o o3  (28.9613)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999752)  (1.05992e+24 cm^-2)
+column h2o hydrostatic 0.000248  (2.62926e+20 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.51e-08  (2.66107e+16 cm^-2)
+
+layer troposphere
+# P 625 mbar
+# T 237.641 K
+# dP 50 mbar
+Pbase 650 mbar
+Tbase 237.2 K
+Mair 28.964 h2o o3  (28.9613)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999749)  (1.05992e+24 cm^-2)
+column h2o hydrostatic 0.000251  (2.66107e+20 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.6e-08  (2.75649e+16 cm^-2)
+
+layer troposphere
+# P 667 mbar
+# T 236.896 K
+# dP 34 mbar
+Pbase 684 mbar (observing level)
+Tbase 236.6 K
+Mair 28.964 h2o o3  (28.9616)
+lineshape Gross ch4 co co2 n2o o2_uncoupled o3
+lineshape VVW_coupled o2_coupled
+lineshape VVH_750 h2o_lines
+column dry_air hydrostatic (0.999779)  (7.2076e+23 cm^-2)
+column h2o hydrostatic 0.000221  (1.59323e+20 cm^-2)  (* 1.00000)
+column o3 hydrostatic 2.69e-08  (1.93927e+16 cm^-2)
+
+#
+# column densities [cm^-2], including scale factors
+#
+#                           zenith             line-of-sight     
+# mesosphere (5 layers):
+#                  dry_air  1.484114e+22       1.484114e+22      
+#                      h2o  8.743614e+16       8.743614e+16      
+#                            (0.0261573 um_pwv) (0.0261573 um_pwv)
+#                       o3  1.836922e+16       1.836922e+16      
+#                            (0.683684 DU)      (0.683684 DU)     
+#
+# stratosphere (12 layers):
+#                  dry_air  1.469271e+24       1.469271e+24      
+#                      h2o  7.949876e+18       7.949876e+18      
+#                            (2.37828 um_pwv)   (2.37828 um_pwv)  
+#                       o3  3.209818e+18       3.209818e+18      
+#                            (119.466 DU)       (119.466 DU)      
+#
+# troposphere (13 layers):
+#                  dry_air  1.301708e+25       1.301708e+25      
+#                      h2o  1.271786e+21       1.271786e+21      
+#                            (380.467 um_pwv)   (380.467 um_pwv)  
+#                       o3  1.125606e+18       1.125606e+18      
+#                            (41.8939 DU)       (41.8939 DU)      
+#
+# total (30 layers):
+#                  dry_air  1.450119e+25       1.450119e+25      
+#                      h2o  1.279823e+21       1.279823e+21      
+#                            (382.871 um_pwv)   (382.871 um_pwv)  
+#                       o3  4.353793e+18       4.353793e+18      
+#                            (162.044 DU)       (162.044 DU)      
+#
+
+! Warning: Encountered in-band lines narrower than the frequency
+!          grid spacing.  The output configuration data includes
+!          the unresolved line count after each column definition
+!          for which this occurred.  Count: 135
+
